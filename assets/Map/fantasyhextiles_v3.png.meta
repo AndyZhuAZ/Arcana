@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "95781877-d4db-46ca-8a3f-fe1737cd05fb",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "fantasyhextiles_v3": {
+      "ver": "1.0.4",
+      "uuid": "61dae8e8-5bac-4659-ae34-e125863a6d65",
+      "rawTextureUuid": "95781877-d4db-46ca-8a3f-fe1737cd05fb",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 256,
+      "height": 287,
+      "rawWidth": 256,
+      "rawHeight": 288,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

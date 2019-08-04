@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "20fa3d57-6c1f-4d15-9763-73d9b091912c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "CrossButton_1": {
+      "ver": "1.0.4",
+      "uuid": "3fc462a5-7c96-4828-b849-9f96a02d762c",
+      "rawTextureUuid": "20fa3d57-6c1f-4d15-9763-73d9b091912c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 6,
+      "height": 8,
+      "rawWidth": 10,
+      "rawHeight": 10,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
