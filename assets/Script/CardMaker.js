@@ -66,7 +66,8 @@ for (let i of CardMaker.cardPile) {
         case 'cure':
             CardMaker.enemyCardPile.push(i);
             break;
-        default:break;
+        default:
+            break;
     }
 }
 
@@ -140,7 +141,7 @@ CardMaker.getCardIMG = function (card) {
                     case 'physical':
                         if (card.value === 1)
                             str += 'TinySword';
-                        else str+='BigSword';
+                        else str += 'BigSword';
                         break;
                 }
             } else if (card.attributes === 'magicBarrier') {
@@ -269,30 +270,4 @@ console.log(getCardPile());
 CardMaker.getCardPile = function () {
     return CardMaker.cardPile;
 };
-// CardMaker.load();
 module.exports = CardMaker;
-// module.exports = {
-//
-// }
-// const enemy = Object.create(character);
-// enemy.hp = CardMaker.fullHP;
-// enemy.name = 'test';
-// const player = Object.create(character);
-// player.hp = CardMaker.fullHP;
-// player.name = 'rookie';
-// const enemyCards = [];
-// const playerCards = [];
-// let flag;
-// while (enemy.hp > 0 && player.hp > 0) {
-//     roundInit(enemyCards, playerCards);
-//     printCard(playerCards);
-//     printHP(enemy, player);
-//     let answer = prompt();
-//     if (answer !== '') {
-//         settleAccounts(player, enemy, playerCards[answer]);
-//         playerCards.splice(answer, 1);
-//     }
-//     else settleAccounts(player, enemy, null);
-//     settleAccounts(enemy, player, flag = botMove());
-//     if (flag !== null) enemyCards.splice(enemyCards.indexOf(flag), 1);
-// }

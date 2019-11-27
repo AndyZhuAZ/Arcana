@@ -1,17 +1,21 @@
+let mainJS = require('Main');
+
 cc.Class({
     extends: cc.Component,
 
     properties: {
         speed: 200,
-        controllerN:cc.Node,
+        controllerN: cc.Node,
+        debug: false,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
+        cc.view.enableAntiAlias(false);
+
         this.ctrlJs = this.controllerN.getComponent('Controller');
         cc.director.getCollisionManager().enabled = true;
-        // cc.director.getPhysicsManager().enabled = true;
     },
     onCollisionEnter: function (other, self) {
         this.speed = 0;
@@ -54,10 +58,11 @@ cc.Class({
         }
     },
 
-    showPos(){
+    showPos() {
         console.log(this.node.getPosition());
     },
     start() {
+        cc.view.enableAntiAlias(false);
 
     },
     changeState(state) {
@@ -86,7 +91,8 @@ cc.Class({
             default:
                 break;
         }
-        // console.log(this.node.getPosition());
+        if (this.debug === true)
+            console.log(this.node.getPosition());
     },
     update(dt) {
         switch (this.ctrlJs.dir) {

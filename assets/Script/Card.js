@@ -1,3 +1,4 @@
+
 var CardMakerJS = require('CardMaker');
 cc.Class({
     extends: cc.Component,
@@ -33,7 +34,7 @@ cc.Class({
     },
 
     start () {
-        // this.CardTile.string = '火之高兴'
+        cc.view.enableAntiAlias(false);
     },
 
     showCard : function(cardInfo){

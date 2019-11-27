@@ -1,3 +1,4 @@
+
 cc.Class({
     extends: cc.Component,
 
@@ -6,13 +7,19 @@ cc.Class({
             type: cc.Node,
             default:null
         },
+        top:1270,
+        left:0,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        cc.view.enableAntiAlias(false);
+
+    },
 
     start () {
+        cc.view.enableAntiAlias(false);
 
     },
 
@@ -22,12 +29,14 @@ cc.Class({
         }
         let w_pos = this.target.convertToWorldSpaceAR(cc.v2(0,0));
         let c_pos = this.node.parent.convertToNodeSpaceAR(w_pos);
-        // console.log(c_pos);
-        if (c_pos.y > 1270){
-            this.node.setPosition(cc.v2(c_pos.x,1270));
+        if (c_pos.y > this.top){
+            this.node.setPosition(cc.v2(c_pos.x,this.top));
             return;
         }
-
+        if (c_pos.x < this.left){
+            this.node.setPosition(cc.v2(this.left,c_pos.y));
+            return;
+        }
         this.node.setPosition(cc.v2(c_pos));
     },
 });
